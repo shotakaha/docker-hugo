@@ -1,4 +1,12 @@
 ##################################################
+# Hugo
+##################################################
+
+public
+.hugo_build.lock
+
+
+##################################################
 # GitHub Pages
 ##################################################
 # This .gitignore is appropriate for repositories deployed to GitHub Pages and using
