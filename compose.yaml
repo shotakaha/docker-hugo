@@ -1,0 +1,11 @@
+services:
+  hugo:
+    image: hugomods/hugo:latest
+    ports:
+      - "1313:1313"
+    volumes:
+      - ./hugo:/workspace
+    working_dir: /workspace
+    command: ["server", "--bind 0.0.0.0", "--baseURL http://localhost:1313"]
+
+
