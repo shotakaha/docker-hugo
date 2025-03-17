@@ -6,6 +6,6 @@ services:
     volumes:
       - ./hugo:/workspace
     working_dir: /workspace
-    command: ["server", "--bind 0.0.0.0", "--baseURL http://localhost:1313"]
+    command: ["server", "-D"]
 
 

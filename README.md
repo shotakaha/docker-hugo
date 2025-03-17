@@ -4,8 +4,8 @@ docker compose hugo
 
 ## イメージ
 
-- hugomods/hugo: https://hub.docker.com/r/hugomods/hugo
-- Document: https://docker.hugomods.com/
+- GitLab: registry.gitlab.com/pages/hugo/hugo_extended:latest
+- Docker Hub: https://hub.docker.com/r/hugomods/hugo
 
 ## 手順
 
@@ -28,7 +28,8 @@ docker-hugo
 
 - [compose.yaml](./compose.yaml)を参照
 - Hugoの公式イメージは存在しないので、コミュニティ版イメージである[hugomods/hugo](https://hub.docker.com/r/hugomods/hugo)を利用する
-- タグの内容はドキュメントを確認する
+- タグの内容は[ドキュメント](https://docker.hugomods.com/)を確認して、適切なタグを選択する
+  - `extended`かどうか、`node`を含むかどうか、などいろいろなバリエーションがある
 
 ## 新規サイトを作成
 
