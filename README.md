@@ -5,7 +5,20 @@ docker compose hugo
 ## イメージ
 
 - GitLab: registry.gitlab.com/pages/hugo/hugo_extended:latest
+
+GitLab Container Registryで公開されているイメージです。
+`hugo_extented`と`hugo`の2種類があります。
+テーマが`npm`のライブラリに依存していない場合は`hugo_extended`で十分です。
+
 - Docker Hub: https://hub.docker.com/r/hugomods/hugo
+
+Docker Hubのレジストリで公開されているイメージです。
+複数のバリエーションが存在し、より複雑な依存関係に対応しています。
+
+Hugoのイメージには公式のものがなく、コミュニティ有志が公開していました。
+長い間`klakegg/hugo`のイメージが使われていましたが、現在はメンテされていないようです。
+そこで`razonyang/hugo`が代わりにイメージを作成しはじめ、
+現在は`hugomods/hugo`として公開しているようです。
 
 ## 手順
 
